@@ -1,5 +1,5 @@
 gen_data <- function(seedz){ # function to simulate data (do not change) 
-  if(is.na(seedz)==TRUE) return(print("change NA to YOUR Studnet No. (check student card)" ))
+  if(is.na(seedz)==TRUE) return(print("change NA to YOUR Student No. (check student card)" ))
   n <- 100
   L <-matrix(0,n,n)
   for (i in 1:n-1) L[i,(i+1)]<-1
