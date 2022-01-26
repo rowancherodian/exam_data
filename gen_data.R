@@ -4,6 +4,6 @@ gen_data <- function(seedz){ # function to simulate data (do not change)
   L <-matrix(0,n,n)
   for (i in 1:n-1) L[i,(i+1)]<-1
   set.seed(seedz)
-  series <- solve((diag(n)-0.4*L),(1+0.3*seq(1:n)+rnorm(n,0,5)))   
+  series <- solve((diag(n)-0.45*L),(1+0.35*seq(1:n)+rnorm(n,0,5)))   
   return(series)
 }
